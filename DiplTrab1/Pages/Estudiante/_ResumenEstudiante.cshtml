@@ -1,0 +1,22 @@
+﻿@using ClassRegistro.Model
+@model ClassEstudiante
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">@Model.NombreCompleto</h5>
+        <p class="card-text">
+            @Model.Matricula
+            <br />
+            @Model.Edad
+            <br />
+            @Model.sexo
+            <br />
+            @Model.FechaNacimiento
+        </p>
+        <a asp-page="./DetalleEstudiante" asp-route-Id="@Model.ID" class="btn btn-success" style="cursor:pointer">Ver detalle</a>
+        <a asp-page="./EditarEstudiante" asp-route-Id="@Model.ID" class="btn btn-secondary" style="cursor:pointer">Editar</a>
+        <a asp-page="./DeleteEstudiante" asp-route-Id="@Model.ID" class="btn btn-danger" style="cursor:pointer">Eliminar</a>
+
+    </div>
+</div>

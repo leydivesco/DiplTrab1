@@ -1,0 +1,15 @@
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\bin\Debug\netcoreapp3.1\ClassDATA.deps.json
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\bin\Debug\netcoreapp3.1\ClassDATA.dll
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\bin\Debug\netcoreapp3.1\ClassDATA.pdb
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\bin\Debug\netcoreapp3.1\ClassRegistro.Model.dll
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\bin\Debug\netcoreapp3.1\ClassRegistro.Model.pdb
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\obj\Debug\netcoreapp3.1\ClassDATA.csprojAssemblyReference.cache
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\obj\Debug\netcoreapp3.1\ClassDATA.AssemblyInfoInputs.cache
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\obj\Debug\netcoreapp3.1\ClassDATA.AssemblyInfo.cs
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\obj\Debug\netcoreapp3.1\ClassDATA.csproj.CopyComplete
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\obj\Debug\netcoreapp3.1\ClassDATA.dll
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\obj\Debug\netcoreapp3.1\ClassDATA.pdb
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\bin\Debug\netcoreapp3.1\ClassDATA.runtimeconfig.json
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\bin\Debug\netcoreapp3.1\ClassDATA.runtimeconfig.dev.json
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\obj\Debug\netcoreapp3.1\ClassDATA.genruntimeconfig.cache
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassDATA\obj\Debug\netcoreapp3.1\ClassDATA.csproj.CoreCompileInputs.cache

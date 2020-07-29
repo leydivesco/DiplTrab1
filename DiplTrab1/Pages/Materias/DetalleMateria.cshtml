@@ -1,0 +1,48 @@
+﻿@page "{id:int}"
+@model DiplTrab1.Pages.Materias.DetalleMateriaModel
+@{
+    ViewData["Title"] = "DetalleMateria";
+}
+
+@if (!string.IsNullOrEmpty(Model.Mensaje))
+{
+    <div class="alert alert-success" role="alert">
+        @Model.Mensaje
+    </div>
+}
+
+<br />
+<div class="card text-center">
+    <div class="card-header">
+        <h2>@Model.materia.Nombre</h2>
+    </div>
+    <partial name="_ResumenMateria" model="@Model.materia" />
+    @*<div class="card-body">
+        <div>
+            <label style="font-weight:bold">ID:</label> @Model.materia.ID
+        </div>
+        <div>
+            <label style="font-weight:bold">Codigo:</label>
+            <br />
+            @Model.materia.Codigo
+        </div>
+        <div>
+            <label style="font-weight:bold">Area:</label>
+            <br />
+            @Model.materia.area
+        </div>
+        <div>
+            <label style="font-weight:bold">Disponible:</label>
+            <br />
+            @Model.materia.Disponible
+        </div>
+        <div>
+            <label style="font-weight:bold">Objetivo:</label>
+            <br />
+            @Model.materia.Objetivos
+        </div>
+    </div>*@
+    <div class="card-footer text-muted">
+        <a asp-page="./MateriasReg" class="btn btn-primary">Volver al listado</a>
+    </div>
+</div>

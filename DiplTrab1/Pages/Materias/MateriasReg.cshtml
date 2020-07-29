@@ -1,0 +1,80 @@
+﻿@page
+@model DiplTrab1.Pages.Materias.MateriasRegModel
+@{
+    ViewData["Title"] = "MateriasReg";
+}
+    @if (!string.IsNullOrEmpty(Model.MensajeDelete))
+    {
+        <label class="alert-info">@Model.MensajeDelete</label>
+    }
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"></h3>
+
+                <div class="card-tools">
+                    <form method="get">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="texto" asp-for="Texto" />
+                            <div class="input-group-append">
+                                <button class="input-group-text" type="submit">Buscar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <!-- /.card-header -->
+            <div class="card-body p-0">
+                @foreach (var materia in Model.Materias)
+                {
+                    <partial name="_ResumenMateria" model="materia"/>
+                }
+                @*<table class="table table-hover text-nowrap">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Codigo</th>
+                            <th>Nombre</th>
+                            <th>Area</th>
+                            <th>Disponible</th>
+                           <th>Objetivos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var materia in Model.Materias)
+                        {
+                        <tr>
+                            <td>@materia.ID</td>
+                            <td>@materia.Codigo</td>
+                            <td>@materia.Nombre</td>
+                            <td>@materia.area</td>
+                            <td>@materia.Disponible</td>
+                            <td>@materia.Objetivos</td>
+                            <td><a asp-page="./DetalleMateria" asp-route-Id="@materia.ID" class="btn btn-success" style="cursor:pointer">Ver detalle</a></td>
+                            <td><a asp-page="./EditarMateria" asp-route-Id="@materia.ID" class="btn btn-secondary" style="cursor:pointer">Editar</a></td>
+                            <td><a asp-page="./DeleteMateria" asp-route-Id="@materia.ID" class="btn btn-danger" style="cursor:pointer">Eliminar</a></td>
+
+                        </tr>
+                        }
+                    </tbody>
+                </table>*@
+
+
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+    </div>
+</div>
+<!-- /.row -->
+<br />
+<a asp-page="./EditarMateria" class="btn btn-success">Crear Materia</a>
+
+@*<h1>@Model.Mensaje</h1>*@
+@*<h1>Materias Registradas</h1>*@
+@section PiedePagina{ 
+    <label class="alert-warning">Esta es la Lista de Materias</label>
+}
+

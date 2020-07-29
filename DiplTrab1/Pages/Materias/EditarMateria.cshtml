@@ -1,0 +1,48 @@
+﻿@page "{id:int?}"
+@model DiplTrab1.Pages.Materias.EditarMateriaModel
+@{
+    ViewData["Title"] = "Editar Materia";
+}
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Editando la materia @Model.Materia.Nombre</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    <form method="post" role="form">
+        <input type="hidden" asp-for="Materia.ID" />
+        <div class="card-body">
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" asp-for="Materia.Nombre" class="form-control" id="">
+                <span class="text-danger" asp-validation-for="Materia.Nombre"></span>
+            </div>
+            <div class="form-group">
+                <label>Codigo:</label>
+                <input type="text" asp-for="Materia.Codigo" class="form-control" id="">
+                <span class="text-danger" asp-validation-for="Materia.Codigo"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Materia.area">Area:</label> <br />
+                <select asp-for="Materia.area" style="width:150px" asp-items="@Model.Areas"></select>
+                <span class="text-danger" asp-validation-for="Materia.area"></span>
+            </div>
+            <div class="form-group">
+                <label>Objetivos:</label>
+                <input type="text" asp-for="Materia.Objetivos" required class="form-control" />
+                <span class="text-danger" asp-validation-for="Materia.Objetivos"></span>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" asp-for="Materia.Disponible" id="IsChecked" class="form-check-label">
+                
+                <label class="form-check-label">Disponible</label>
+            </div>
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        </div>        
+    </form>
+</div>
+<!-- /.card -->

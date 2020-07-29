@@ -1,0 +1,51 @@
+﻿@page "{id:int}"
+@model DiplTrab1.Pages.Estudiante.DetalleEstudianteModel
+@{
+    ViewData["Title"] = "DetalleEstudiante";
+}
+@if (!string.IsNullOrEmpty(Model.Mensaje))
+{
+    <div class="alert alert-success" role="alert">
+        @Model.Mensaje
+    </div>
+}
+<br />
+<partial name="_ResumenEstudiante" model="Model.Estudiante" />
+@*<div class="card text-center">
+        <div class="card-header">
+            <h2>@Model.Estudiante.NombreCompleto</h2>
+        </div>
+        <div class="card-body">
+            <div>
+                <label style="font-weight:bold">ID:</label> @Model.Estudiante.ID
+            </div>
+            <div>
+                <label style="font-weight:bold">Matricula:</label>
+                <br />
+                @Model.Estudiante.Matricula
+            </div>
+            <div>
+                <label style="font-weight:bold">Fecha de Nacimiento:</label>
+                <br />
+                @Model.Estudiante.FechaNacimiento
+            </div>
+            <div>
+                <label style="font-weight:bold">Edad:</label>
+                <br />
+                @Model.Estudiante.Edad
+            </div>
+            <div>
+                <label style="font-weight:bold">Sexo:</label>
+                <br />
+                @Model.Estudiante.sexo
+            </div>
+        </div>
+        <div class="card-footer text-muted">
+            <a asp-page="./EstudiantesReg" class="btn btn-primary">Volver al listado</a>
+        </div>
+    </div>*@
+<div class="card-footer text-muted">
+    <a asp-page="./EstudiantesReg" class="btn btn-primary">Volver al listado</a>
+</div>
+<h1>Detalle Estudiante</h1>
+

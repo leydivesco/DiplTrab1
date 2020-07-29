@@ -1,0 +1,26 @@
+﻿@page
+@model DiplTrab1.Pages.Cafeteria.Categoria.ListCategoriaModel
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Cantidad de Productos</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var categoria in Model.CategoriaDtos)
+        {
+            <tr>
+                <td>@categoria.ID</td>
+                <td>@categoria.Nombre</td>
+                <td>@categoria.CantidadProductos</td>
+                <td><a class="btn btn-success" asp-page="./EditarCategoria" asp-route-id="@categoria.ID">Editar</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-page="./EditarCategoria" class="btn btn-success">Crear Categoria</a>

@@ -1,0 +1,9 @@
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassRegistro.Model\bin\Debug\netcoreapp3.1\ClassRegistro.Model.deps.json
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassRegistro.Model\bin\Debug\netcoreapp3.1\ClassRegistro.Model.dll
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassRegistro.Model\bin\Debug\netcoreapp3.1\ClassRegistro.Model.pdb
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassRegistro.Model\obj\Debug\netcoreapp3.1\ClassRegistro.Model.AssemblyInfoInputs.cache
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassRegistro.Model\obj\Debug\netcoreapp3.1\ClassRegistro.Model.AssemblyInfo.cs
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassRegistro.Model\obj\Debug\netcoreapp3.1\ClassRegistro.Model.csproj.CoreCompileInputs.cache
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassRegistro.Model\obj\Debug\netcoreapp3.1\ClassRegistro.Model.dll
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassRegistro.Model\obj\Debug\netcoreapp3.1\ClassRegistro.Model.pdb
+C:\Users\leydi\Desktop\Diplomado\DiplTrab1\ClassRegistro.Model\obj\Debug\netcoreapp3.1\ClassRegistro.Model.csprojAssemblyReference.cache

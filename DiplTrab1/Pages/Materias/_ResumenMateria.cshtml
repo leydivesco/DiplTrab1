@@ -1,0 +1,16 @@
+﻿@using ClassRegistro.Model
+@model ClassMateria
+
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="" alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Codigo - @Model.Nombre</h5>
+        <p class="card-text">
+            @Model.Objetivos
+        </p>
+        <a asp-page="./DetalleMateria" asp-route-Id="@Model.ID" class="btn btn-success" style="cursor:pointer">Ver detalle</a>
+        <a asp-page="./EditarMateria" asp-route-Id="@Model.ID" class="btn btn-secondary" style="cursor:pointer">Editar</a>
+        <a asp-page="./DeleteMateria" asp-route-Id="@Model.ID" class="btn btn-danger" style="cursor:pointer">Eliminar</a>
+
+    </div>
+</div>

@@ -1,0 +1,50 @@
+﻿@page "{id:int?}"
+@model DiplTrab1.Pages.Estudiante.EditarEstudianteModel
+@{
+    ViewData["Title"] = "EditarEstudiante";
+}
+
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Editando la materia @Model.Estudiante.NombreCompleto</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    <form method="post" role="form">
+        <input type="hidden" asp-for="Estudiante.ID" />
+        <div class="card-body">
+            <div class="form-group">
+                <label>Nombre:</label>
+                <input type="text" asp-for="Estudiante.Nombre" class="form-control" id="">
+            </div>
+            <div class="form-group">
+                <label>Apellido:</label>
+                <input type="text" asp-for="Estudiante.Apellido" class="form-control" id="">
+            </div>
+            <div class="form-group">
+                <label>Matricula:</label>
+                <input type="text" asp-for="Estudiante.Matricula" class="form-control" id="">
+            </div>
+            <div class="form-group">
+                <label>Fecha de Nacimiento:</label>
+                <input type="date" asp-for="Estudiante.FechaNacimiento" class="form-control" />
+
+            </div>
+            <div class="form-group">
+                <label>Edad:</label>
+                <input type="reset" asp-for="Estudiante.Edad" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Sexo:</label><br />
+                <select style="width:150px" asp-items="@Model.Genero"></select>
+            </div>
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        </div>
+    </form>
+</div>
+<!-- /.card -->
